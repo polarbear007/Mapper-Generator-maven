@@ -3,10 +3,11 @@ package cn.itcast.entity;
 import java.util.Date;
 import javax.persistence.*;
 
-@Table(name = "t_user", catalog="mybatis_mapper")
+@Table(name = "mybatis_mapper..t_user")
 public class User {
     @Id
-    @GeneratedValue(strategy=GenerationType.IDENTITY)
+    @Column(name = "uid")
+    @GeneratedValue(generator = "JDBC")
     private Integer uid;
 
     /**

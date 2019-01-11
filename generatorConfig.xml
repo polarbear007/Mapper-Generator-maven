@@ -59,5 +59,10 @@
 		<table tableName="t_user" catalog="mybatis_mapper" domainObjectName="User" >
 			<generatedKey column="uid" sqlStatement="JDBC" />
 		</table>
+		
+		<table tableName="t_employees"  domainObjectName="Employees" >
+			<generatedKey column="emp_no" sqlStatement="JDBC" />
+			<columnOverride column="gender" jdbcType="enum" ></columnOverride>
+		</table>
     </context>
 </generatorConfiguration>
