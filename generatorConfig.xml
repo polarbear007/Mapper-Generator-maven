@@ -4,8 +4,10 @@
 
 <!--suppress MybatisGenerateCustomPluginInspection -->
 <generatorConfiguration>
+	<!-- 使用  MyBatis3Simple  这个模板就好了-->
     <context id="Mysql" targetRuntime="MyBatis3Simple" defaultModelType="flat">
         <property name="javaFileEncoding" value="UTF-8"/>
+        <!-- 如果这个设置成 true ，会有 @Id @column @generatedValue 这此注解 -->
         <property name="useMapperCommentGenerator" value="true"/>
 	
 		<!-- 和原生的mybatis 逆向工程配置相比，只是多配置这个插件，其他的全部一样 -->
